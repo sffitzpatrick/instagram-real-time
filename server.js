@@ -18,16 +18,16 @@ var pub = __dirname + '/public',
  * Set the 'client ID' and the 'client secret' to use on Instagram
  * @type {String}
  */
-var clientID = 'YOUR_CLIENT_ID',
-    clientSecret = 'YOUR_CLIENT_SECRET';
+var clientID = 'ddeb14dca2bb42c6a194166351b0a654',
+    clientSecret = '46b21ea47c254aab8bd43aaeb7113fa1';
 
 /**
  * Set the configuration
  */
 Instagram.set('client_id', clientID);
 Instagram.set('client_secret', clientSecret);
-Instagram.set('callback_url', 'http://YOUR_URL.com/callback');
-Instagram.set('redirect_uri', 'http://YOUR_URL.com');
+Instagram.set('callback_url', 'http://jessicaandsean.us:3700/callback');
+Instagram.set('redirect_uri', 'http://jessicaandsean.us:3700');
 Instagram.set('maxSockets', 10);
 
 /**
@@ -37,9 +37,9 @@ Instagram.set('maxSockets', 10);
  */
 Instagram.subscriptions.subscribe({
   object: 'tag',
-  object_id: 'lollapalooza',
+  object_id: 'love',
   aspect: 'media',
-  callback_url: 'http://YOUR_URL.com/callback',
+  callback_url: 'http://jessicaandsean.us:3700/callback',
   type: 'subscription',
   id: '#'
 });
@@ -51,9 +51,9 @@ Instagram.subscriptions.subscribe({
  */
 Instagram.subscriptions.subscribe({
   object: 'tag',
-  object_id: 'lollapalooza2013',
+  object_id: 'instagood',
   aspect: 'media',
-  callback_url: 'http://YOUR_URL.com/callback',
+  callback_url: 'http://jessicaandsean.us:3700/callback',
   type: 'subscription',
   id: '#'
 });
@@ -65,9 +65,9 @@ Instagram.subscriptions.subscribe({
  */
 Instagram.subscriptions.subscribe({
   object: 'tag',
-  object_id: 'lolla2013',
+  object_id: 'me',
   aspect: 'media',
-  callback_url: 'http://YOUR_URL.com/callback',
+  callback_url: 'http://jessicaandsean.us:3700/callback',
   type: 'subscription',
   id: '#'
 });
