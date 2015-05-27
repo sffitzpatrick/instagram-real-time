@@ -18,8 +18,8 @@ var pub = __dirname + '/public',
  * Set the 'client ID' and the 'client secret' to use on Instagram
  * @type {String}
  */
-var clientID = 'ddeb14dca2bb42c6a194166351b0a654',
-    clientSecret = '46b21ea47c254aab8bd43aaeb7113fa1';
+var clientID = '4404ece739224c5ba30c5e5187dc2bff',
+    clientSecret = '2349c176031446738c74ed8a09554da3';
 
 /**
  * Set the configuration
@@ -37,40 +37,13 @@ Instagram.set('maxSockets', 10);
  */
 Instagram.subscriptions.subscribe({
   object: 'tag',
-  object_id: 'love',
+  object_id: 'cats',
   aspect: 'media',
   callback_url: 'http://jessicaandsean.us:3700/callback',
   type: 'subscription',
   id: '#'
 });
 
-/**
- * Uses the library "instagram-node-lib" to Subscribe to the Instagram API Real Time
- * with the tag "hashtag" lollapalooza2013
- * @type {String}
- */
-Instagram.subscriptions.subscribe({
-  object: 'tag',
-  object_id: 'instagood',
-  aspect: 'media',
-  callback_url: 'http://jessicaandsean.us:3700/callback',
-  type: 'subscription',
-  id: '#'
-});
-
-/**
- * Uses the library "instagram-node-lib" to Subscribe to the Instagram API Real Time
- * with the tag "hashtag" lolla2013
- * @type {String}
- */
-Instagram.subscriptions.subscribe({
-  object: 'tag',
-  object_id: 'me',
-  aspect: 'media',
-  callback_url: 'http://jessicaandsean.us:3700/callback',
-  type: 'subscription',
-  id: '#'
-});
 
 // if you want to unsubscribe to any hashtag you subscribe
 // just need to pass the ID Instagram send as response to you
@@ -116,7 +89,7 @@ app.get("/views", function(req, res){
  */
 io.sockets.on('connection', function (socket) {
   Instagram.tags.recent({
-      name: 'love',
+      name: 'cats',
       complete: function(data) {
         socket.emit('firstShow', { firstShow: data });
       }
