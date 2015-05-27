@@ -219,7 +219,7 @@ a:hover {
 #imgContent img { display: block; }
 #imgContent a {
 	float: left;
-	width: 16.640625%;
+	width: 33.333333%;
 }
 #imgContent img {
 	width: 100%;
@@ -231,7 +231,6 @@ a:hover {
 #footer {
 	position: fixed;
 	bottom: 0;
-	background: url(../images/bg-footer.png) no-repeat 0;
 	background-size: cover;
 	width: 100%;
 	height: 302px;
