@@ -91,7 +91,8 @@ a:hover {
 #aside {
 	position: fixed;
 	left: 0;
-	width: 16.640625%;
+	bottom: 0;
+	width: 100%;
 	z-index: 40;
   border-top: 8px solid #f34e52;
 }
