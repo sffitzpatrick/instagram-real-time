@@ -136,4 +136,17 @@ function sendMessage(url) {
   io.sockets.emit('show', { show: url });
 }
 
+
+/* run forever */
+var forever = require('forever');
+
+  var child = new (forever.Forever)('your-filename.js', {
+    max: 3,
+    silent: true,
+    args: []
+  });
+
+  child.on('exit', this.callback);
+  child.start();
+
 console.log("Listening on port " + port);
