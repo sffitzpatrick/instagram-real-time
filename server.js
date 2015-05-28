@@ -37,13 +37,21 @@ Instagram.set('maxSockets', 10);
  */
 Instagram.subscriptions.subscribe({
   object: 'tag',
-  object_id: 'cats',
+  object_id: 'jswedding',
   aspect: 'media',
   callback_url: 'http://jessicaandsean.us:3700/callback',
   type: 'subscription',
   id: '#'
 });
 
+Instagram.subscriptions.subscribe({
+  object: 'tag',
+  object_id: 'fitzwed',
+  aspect: 'media',
+  callback_url: 'http://jessicaandsean.us:3700/callback',
+  type: 'subscription',
+  id: '#'
+});
 
 // if you want to unsubscribe to any hashtag you subscribe
 // just need to pass the ID Instagram send as response to you
