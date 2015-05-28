@@ -94,7 +94,6 @@ a:hover {
 	bottom: 0;
 	width: 100%;
 	z-index: 40;
-  border-top: 8px solid #f34e52;
 }
 
 /***********
@@ -102,6 +101,7 @@ a:hover {
 ************/
 .logo {
 	background: #fff;
+	max-width: 140px;
 }
 .logo img {
   display: block;
@@ -220,7 +220,7 @@ a:hover {
 #imgContent img { display: block; }
 #imgContent a {
 	float: left;
-	width: 33.333333%;
+	width: 25%;
 }
 #imgContent img {
 	width: 100%;
