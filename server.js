@@ -140,7 +140,7 @@ function sendMessage(url) {
 /* run forever */
 var forever = require('forever');
 
-  var child = new (forever.Forever)('your-filename.js', {
+  var child = new (forever.Forever)('server.js', {
     max: 3,
     silent: true,
     args: []
