@@ -296,8 +296,11 @@ a:hover {
     float: left;
   }
   .logo {
-    padding: 0;
+    padding: 10px;
     margin: 10px 0 0 15px;
+    -webkit-box-shadow: 2px 1px 8px 0px rgba(85,85,85,0.3);
+    -moz-box-shadow: 2px 1px 8px 0px rgba(85,85,85,0.3);
+    box-shadow: 2px 1px 8px 0px rgba(85,85,85,0.3);
   }
   .logo a {
     padding: 0;
