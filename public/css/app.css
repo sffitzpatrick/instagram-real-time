@@ -102,6 +102,10 @@ a:hover {
 .logo {
 	background: #fff;
 	max-width: 140px;
+	padding: 10px;
+  -webkit-box-shadow: 2px 1px 8px 0px rgba(85,85,85,0.3);
+  -moz-box-shadow: 2px 1px 8px 0px rgba(85,85,85,0.3);
+  box-shadow: 2px 1px 8px 0px rgba(85,85,85,0.3);
 }
 .logo img {
   display: block;
@@ -296,11 +300,8 @@ a:hover {
     float: left;
   }
   .logo {
-    padding: 10px;
+    padding: 0;
     margin: 10px 0 0 15px;
-    -webkit-box-shadow: 2px 1px 8px 0px rgba(85,85,85,0.3);
-    -moz-box-shadow: 2px 1px 8px 0px rgba(85,85,85,0.3);
-    box-shadow: 2px 1px 8px 0px rgba(85,85,85,0.3);
   }
   .logo a {
     padding: 0;
